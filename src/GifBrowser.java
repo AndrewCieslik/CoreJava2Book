@@ -27,11 +27,8 @@ class FrameBrowser extends JFrame {
         open.addActionListener(new ListenIfOpen());
         JMenuItem end = new JMenuItem("End");
         menu.add(end);
-        end.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent event) {
-                    System.exit(0);
-                }
-            });
+        end.addActionListener(event -> System.exit(0));
+
             //to print gifs use label
             label = new JLabel();
             Container contents = getContentPane();
@@ -51,7 +48,7 @@ class FrameBrowser extends JFrame {
                     }
 
                     public String getDescription() {
-                        return "Obraz GIF";
+                        return "GIF";
                     }
                 });
                 //window choosing file
