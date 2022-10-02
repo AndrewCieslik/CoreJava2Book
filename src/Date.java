@@ -18,9 +18,12 @@ public class Date {
         GregorianCalendar newYearsDay = new GregorianCalendar(2023,11,31);  //(month 0-11)
         System.out.println(newYearsDay.getTime());
 
-        GregorianCalendar firstDayOfTheYear = new GregorianCalendar();
+        GregorianCalendar firstDayOfTheYear;
         firstDayOfTheYear = newYearsDay;
         firstDayOfTheYear.add(Calendar.DAY_OF_YEAR,1);
         System.out.println(firstDayOfTheYear.getTime());
+
+        Calendar today = null;
+        today.set(2022,9,2);
     }
 }
