@@ -1,12 +1,8 @@
-import javax.swing.*;
-import java.awt.*;
+import java.applet.Applet;
+import java.awt.Graphics;
 
-import static javax.swing.SwingConstants.CENTER;
-
-public class NoHelloWorldApplet extends JApplet {
-    public void init(){
-        Container field = getContentPane();
-        JLabel label = new JLabel("This is not applet 'Hello World'", CENTER);
-        field.add(label);
+public class NoHelloWorldApplet extends Applet {
+    public void paint(Graphics g) {
+        g.drawString("No Hello world!", 50, 25);
     }
 }
